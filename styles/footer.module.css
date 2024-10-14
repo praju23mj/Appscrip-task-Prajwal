@@ -1,0 +1,162 @@
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-left: 100px;
+  }
+  
+  
+  .contact{
+    padding-left:140px ;
+    padding-right: 20px;
+  }
+  .newsletter, .contact, .links, .quickLinks, .social {
+    flex: 1 1 250px;
+    margin: 20px;
+  }
+  
+  .newsletter h3, .contact h3, .links h3, .quickLinks h3, .social h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .emailSignup {
+    display: flex;
+    margin-top: 40px;
+  }
+  
+  .emailSignup input {
+    padding: 10px 150px 10px 10px;
+    border: none;
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .emailSignup button {
+    background-color: transparent;
+    color:rgb(85, 84, 84);
+    padding: 10px 20px;
+    border: 1px solid rgb(85, 84, 84);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .small{
+    font-size: 0.7rem;
+  }
+  
+  .line{
+    width: 1300px;
+  }
+  
+  .contact p, .contact small, .links ul, .quickLinks ul {
+    margin-bottom: 10px;
+  }
+
+  .symbol{
+    display: flex;
+  }
+
+  .links {
+    margin-top: 50px;
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .links ul {
+    list-style-type: none;
+  }
+  .links ul li{
+    padding: 5px;
+  }
+
+
+.quickLinks {
+  flex: 1 1 250px;
+  margin: 20px;
+  margin-top: 50px;
+}
+
+.quickLinks ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.quickLinks ul li {
+  padding: 5px 0;
+}
+
+/* Follow Us and Payment Icons */
+.media {
+  flex: 1 1 250px;
+  margin: 20px;
+  margin-top: 50px;
+}
+
+.social img {
+  margin-right: 10px;
+}
+
+.paymenticons {
+  margin-top: 15px;
+}
+
+.paymenticons img {
+  margin-right: 8px;
+}
+
+
+@media (max-width: 768px) {
+  .containers {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quickLinks, 
+  .media {
+    flex: 1 1 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .social {
+    justify-content: center;
+  }
+
+  .paymenticons img {
+    margin: 8px;
+  }
+}
+
+/* Media Query for Screens 480px and Below (Mobile) */
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px 10px;
+  }
+
+  .containers {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .quickLinks,
+  .media {
+    flex: 1 1 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .paymenticons img {
+    width: 40px;
+    height: 20px;
+    margin: 5px;
+  }
+}

@@ -1,44 +1,11 @@
-// import React from 'react';
-// import Header from "@/components/Header";
-// import ProductList from "@/components/ProductList";
-// import Filter from "@/components/Filter";
-// import { Product } from './types';
 
-
-// // Fetching products using getServerSideProps
-// export async function getServerSideProps() {
-//   let products: Product[] = []; // Specify the type for products
-//   try {
-//     const response = await fetch("https://fakestoreapi.com/products");
-//     products = await response.json();
-//     console.log("Fetched products:", products);
-//   } catch (error) {
-//     console.error("Error fetching products:", error);
-//   }
-
-//   return {
-//     props: {
-//       products: products || [], // Ensure products is an array
-//     },
-//   };
-// }
-
-// const Home: React.FC<{ products: Product[] }> = ({ products }) => {
-// return (
-//     <div>
-//       <Header />
-//       <ProductList />
-//       <Filter products={products} />
-//     </div>
-//   );
-// };
-// export default Home;
 
 // app/page.tsx
 import React from 'react';
 import Header from "@/components/Header";
 import ProductList from "@/components/ProductList";
 import Filter from "@/components/Filter";
+import Footer from '@/components/Footer';
 
 // Define the type for a product
 interface Product {
@@ -64,6 +31,7 @@ const Home = async () => {
       <Header />
       <ProductList />
       <Filter products={products} />
+      <Footer/>
     </div>
   );
 };

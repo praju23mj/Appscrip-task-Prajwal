@@ -1,0 +1,97 @@
+.hero{
+    width: 100%;
+    height: 100%;
+}
+
+.hero h1{
+    font-family: 'Simplon Norm', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+}
+.para{
+    width: 100%;
+}
+.head{
+    padding: 20px;
+    margin-top: 10px;
+}
+.maincontainer{
+    text-align: center;
+}
+
+.filter{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin: 40px;
+    margin-bottom: 20px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    border-left: none;
+    border-right: none;
+    padding: 20px;
+}
+
+.select{
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-weight: 600;
+
+}
+
+.under{
+    color: lightgray;
+}
+
+.num{
+    font-weight: 600;
+    margin-left: 30px;
+}
+.hide{
+    margin-right: 40rem;
+}
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 28px; /* Reduce font size for smaller screens */
+    }
+
+    .filter {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the left */
+        margin: 20px; /* Reduce margins */
+    }
+
+    .num {
+        margin-left: 0; /* Center text on small screens */
+        margin-bottom: 10px; /* Add some space below */
+    }
+
+    .hide {
+        margin-right: 0; /* Remove large right margin */
+        margin-bottom: 10px; /* Add some space below */
+    }
+
+    .select {
+        width: 100%; /* Full width for select on small screens */
+        margin-top: 10px; /* Add space above */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 24px; /* Further reduce font size for very small screens */
+    }
+
+    .filter {
+        padding: 10px; /* Reduce padding */
+    }
+
+    .para {
+        font-size: 14px; /* Smaller font for paragraphs */
+    }
+}

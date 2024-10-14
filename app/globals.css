@@ -1,0 +1,58 @@
+/* @font-face {
+    font-family: 'Simplon Norm';
+    src: url('/fonts/SimplonNorm-Regular.woff2') format('woff2'),
+         url('/fonts/SimplonNorm-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Simplon Norm';
+    src: url('/fonts/SimplonNorm-Bold.woff2') format('woff2'),
+         url('/fonts/SimplonNorm-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'Simplon Norm', sans-serif;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+  } */
+
+  /* global.css */
+
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Typography */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Add some base styles for all screens */
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* Additional global responsive adjustments */
+@media (max-width: 768px) {
+  body {
+    padding: 10px; /* Add padding on smaller screens */
+  }
+}
